@@ -3,12 +3,50 @@ body {
 }
 
 nav li {
+    display: inline-block;
+    margin: 0 10px;
     
 }
 
+nav li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, serif;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.87);
+    vertical-align: middle;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .nav {
-    display: inline-block;
-    justify-content: ;
+    display: flex;
+    justify-content: flex-end;
     align-content: ;
-    left: 0;
+    left: ;
+    padding: ;
+}
+
+.m-pic img {
+    border-radius: 15px;
+}
+
+.material-icons {
+    border-radius: 5px;
+}
+
+.nav-list {
+    align-content: center;
+}
+
+.google-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    height: 100vh;
 }
