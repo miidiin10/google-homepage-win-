@@ -48,5 +48,22 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin-top: auto;
-    height: 100vh;
+    height: 40vh;
+}
+
+.search-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search-input input {
+    width: 550px;
+    padding: 13px;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: darkgray;
+    border-style: solid;
 }
