@@ -66,4 +66,7 @@ a:hover {
     border-width: 1px;
     border-color: darkgray;
     border-style: solid;
+    background-image: url(outline_search_black_24dp.png);
+    background-repeat: no-repeat;
+    background-position: left;
 }
