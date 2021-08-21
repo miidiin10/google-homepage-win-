@@ -3,6 +3,7 @@
 <header>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="css/all.css" rel="stylesheet">
 </header>
 
 <body>
@@ -34,11 +35,15 @@
     </section>
 
 <div class="search-input">
-    <div><img class="search" src="outline_search_black_24dp.png"><img class="mic" src="outline_mic_black_24dp.png"></div>
-    <input class="search-box" name="search-box" type="text">
+    
+    
+    <input class="search-box" name="search-box" type="text" id=speechinput x-webkit-speech />
+    <i class="fa fa-search search-ico"></i>
+    <i class="fa fa-microphone microphone-ico"></i>
+      
 </div>
 
-<div>
+<div class="button" >
 <div class="google-search-button"><button>Google Search</button></div>
 <div class="im-lucky-button"><button>I'm Feeling Lucky</button></div>
 </div>

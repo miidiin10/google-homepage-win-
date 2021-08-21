@@ -52,21 +52,74 @@ a:hover {
 }
 
 .search-input {
+    width: 550px;
+    position:relative;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.search-input:hover  {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
     
 }
 
 .search-input input {
     width: 550px;
-    padding: 13px;
+    padding: 15px;
     border-radius: 25px;
     border-width: 1px;
-    border-color: darkgray;
+    border-color: darkgrey;
     border-style: solid;
-    background-image: url(outline_search_black_24dp.png);
-    background-repeat: no-repeat;
-    background-position: left;
+    max-width: 100%;
 }
+
+.search-ico {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    margin-left: 10px;
+    color: darkgray;
+
+}
+
+.microphone-ico {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    margin-right: 10px;
+    color: blue;
+    cursor: pointer;
+
+}
+
+#speechinput {
+
+}
+
+.button {
+   width: auto;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+   
+}
+
+button {
+    
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 90%;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 4px;
+    margin: 20px;
+    
+}
+
