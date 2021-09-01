@@ -1,5 +1,12 @@
 body {
     background-color: #fff;
+    min-width: 400px;
+    margin: 0;
+    height: 100%;
+}
+
+div {
+    display: block;
 }
 
 nav li {
@@ -70,8 +77,8 @@ a:hover {
 }
 
 .search-input {
-    width: 550px;
-    position:relative;
+    width: 560px;
+    position: relative;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -86,7 +93,7 @@ a:hover {
 }
 
 .search-input input {
-    width: 550px;
+    width: 560px;
     padding: 15px;
     border-radius: 25px;
     border-width: 1px;
@@ -152,34 +159,202 @@ button:hover {
 }
 
 .langs {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: -35px; 
-}
-
-
-.langs li {
+    color: #3c4043;
     display: inline-block;
+    line-height: 28px;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    padding: 3px;
-    margin-right: 10px 0 0 0; 
+    font-size: small;
 }
 
-.langs li a{
+.langs a {
+    color: #1a0dab;
+    padding: 0 3px;
+}
+
+.lang-center  {
+    
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.langspace {
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    margin-bottom: 217px;
+}
+
+div{
+    display: block;
+}
+
+
+
+.langs a{
     text-decoration: none;
-    color: rgb(5, 5, 151);
+    
+}
+
+.footer {
+    background: #f2f2f2;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,.54);
 }
 
 .nigeria {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#dadce0;
-    color:rgba(0,0,0,0.54);
     padding: 15px 30px;
     border-bottom: 1px solid #dadce0;
-    margin: 0;
+    font-size: 15px;
+    
 }
 
-.about
+.last-layer {
+
+    display: flex;
+    flex-wrap: wrap;
+   
+    padding: 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+}
+
+.footer-links a {
+    color: #70757a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+.carbon {
+    display: flex;
+    flex-wrap: wrap;   
+    order: 2;
+    min-width: 40%;
+    justify-content: center;
+   }
+
+.carbon a {
+    color: #70757a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+.privacy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 3;
+}
+
+.privacy a {
+    color: #70757a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+    .langspace {
+        flex-grow: 1;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+    
+    .last-layer {
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+       }
+    
+       .carbon {
+        display: flex;
+        flex-wrap: wrap;   
+        order: 0;
+        width: 100%;
+        justify-content: center;
+       }
+    
+       .privacy {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        min-width: 30%;
+        order: 3;
+       }
+       .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        min-width: 30%;
+        order: 1;
+    }
+    
+}
+
+@media and screen and (max-width: 900px) {
+
+    .last-layer {
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+       }
+    
+       .carbon {
+        display: flex;
+        flex-wrap: wrap;   
+        order: 0;
+        width: 100%;
+        justify-content: center;
+       }
+    
+       .privacy {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        min-width: 30%;
+        order: 3;
+       }
+       .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        min-width: 30%;
+        order: 1;
+    }
+
+}
