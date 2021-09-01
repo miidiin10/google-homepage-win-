@@ -325,7 +325,7 @@ a:hover, a:active {
     
 }
 
-@media and screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
 
     .last-layer {
         justify-content: space-evenly;
@@ -357,4 +357,14 @@ a:hover, a:active {
         order: 1;
     }
 
+}
+
+@media screen and (max-width: 1600px) {
+    .langspace {
+        flex-grow: 1;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+       
 }
