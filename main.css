@@ -94,12 +94,17 @@ a:hover {
 
 .search-input input {
     width: 560px;
-    padding: 15px;
+    padding: 15px 0 15px 50px;
     border-radius: 25px;
     border-width: 1px;
     border-color: darkgrey;
     border-style: solid;
     max-width: 100%;
+}
+
+
+input:focus {
+    outline: none;
 }
 
 .search-ico {
