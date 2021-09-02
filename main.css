@@ -127,8 +127,8 @@ input:focus {
 .material-icons {
     position: absolute;
     right: 10px;
-    top: 15px;
-    margin-right: 10px;
+    top: 10px;
+    margin-right: 8px;
     color: blue;
     cursor: pointer;
 
